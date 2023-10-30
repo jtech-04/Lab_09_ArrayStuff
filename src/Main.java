@@ -91,6 +91,18 @@ public class Main
         return average;
     }
 
+    public static double getAverage(int dataPoints[])
+    {
+        double sum = 0.0;
+        double average = 0;
 
+        for (int l=0; l < dataPoints.length; l++)
+        {
+            sum += dataPoints[l];
+        }
+        average = sum/ dataPoints.length;
+
+        return average;
+    }
 
 }
